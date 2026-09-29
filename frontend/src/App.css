@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, "Noto Sans KR", sans-serif;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  /* Vite 기본 템플릿의 flex/place-items 중앙정렬을 덮어써서
+     .app이 전체 폭을 차지하게 함 */
+  display: block;
+}
+
+.app {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  /* auto-fit: 카드가 들어갈 수 있는 만큼 열을 자동으로 채우고,
+     남는 공간이 있으면 카드 폭을 같이 늘려서 화면을 꽉 채움 */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid rgba(128, 128, 128, 0.35);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card-name {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.card-value {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.card-unit {
+  font-size: 1rem;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+.card-time {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.error {
+  background: rgba(220, 50, 50, 0.15);
+  border: 1px solid rgba(220, 50, 50, 0.5);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,23 @@
+# --- backend (FastAPI) ---
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/*.env
+backend/.pytest_cache/
+
+# --- frontend (Vite React) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# --- 공통 ---
+*.log
+.DS_Store
+Thumbs.db
+
+# 에디터 설정
+.vscode/
+.idea/
